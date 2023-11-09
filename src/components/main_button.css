@@ -1,0 +1,33 @@
+
+.main-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .main-buttons .button-option {
+    /* color: white; */
+    width: 273px;
+    height: 50px;
+    background-color: white;
+    /* background-image: linear-gradient(-90deg,#2C24C4,#2464E4); */
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    color: #111;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid 2px #fff;
+
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .button-on, .button-option:hover{
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+  }

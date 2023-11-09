@@ -1,0 +1,9 @@
+#carrossel{
+    background-color: transparent;
+}
+
+#carrossel img{
+    max-height: 500px;
+    object-fit: cover;
+    height: 100vh;
+}

@@ -1,0 +1,9 @@
+#carrosselIndex{
+    background-color: transparent;
+}
+
+#carrosselIndex img{
+    /* max-height: 500px; */
+    object-fit: cover;
+    height: 100vh;
+}

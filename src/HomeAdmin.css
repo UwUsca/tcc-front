@@ -1,0 +1,124 @@
+.sidebar_container {
+    position: relative;
+    display: flex;
+  }
+  
+.toggle_button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    font-size: 35px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #1e1e1e;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    color: white;
+}
+  
+.sidebar_admin {
+    width: 250px;
+    height: 100vh;
+    background: #1e1e1e;
+    color: #fff;
+    transform: translateX(-250px);
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: -250px;
+}
+  
+.sidebar_container.open .toggle_button {
+    transform: translateX(250px); /* Move o botão junto com a barra lateral */
+    /* pointer-events: auto; */
+}
+  
+.sidebar_container.open .sidebar_admin {
+    transform: translateX(0); /* Move a barra lateral */
+    left: 0;
+}
+.sidebar_container.closed .sidebar_admin {
+    transform: translateX(-100%);
+    width: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden; /* Esconder a barra lateral quando fechada */
+}
+  
+.sidebar_admin ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.sidebar_admin li {
+    padding: 0;
+}
+  
+.link_sidebar {
+    width: 160px;
+    height: 50px;
+    background-color: #292929;
+    border-radius: 15px;
+    color: #949494;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 10px;
+    transition: all .1s ease-in-out;
+}
+.link_sidebar:hover{
+    transform: scale(1.05);
+}
+.link_sidebar img{
+    width: 10px;
+    filter: brightness(0) saturate(100%) invert(66%) sepia(0%) saturate(1%) hue-rotate(134deg) brightness(89%) contrast(90%);
+}
+  
+.link_sidebar.active {
+    font-weight: bold;
+    color: white;
+    background-color: #424242;
+}
+.link_sidebar.active img{
+    filter: invert(100%);
+}
+  
+
+.logo_sidebar{
+    background-color: #D9D9D9;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 10px;
+    border: 6px solid #6c6c6c;
+}
+.logo_sidebar img{
+    width: 100%;
+    height: 100%;
+}
+.nome_logo_sidebar{
+    width: 198px;
+    height: 60px;
+    margin-top: -10px;
+}
+.divider_sidebar{
+    margin-top: 10px;
+    height: 3px;
+    width: 90%;
+    border-radius: 10px;
+    background-image: linear-gradient(-90deg,#2C24C4,#2464E4);
+}

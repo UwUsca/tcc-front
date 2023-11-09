@@ -1,0 +1,289 @@
+.div_register_local{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_register_local h1{
+    color: white;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 28px;
+}
+.form_container_reg_local{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+    height: fit-content;
+    margin-top: 5px;
+    padding: 0 20px;
+    border-radius: 12px;
+    background: #1f1f1f;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199); */
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  }
+.form_reg_local{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.form_p_local{
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+.form_input_local{
+    width: 85vw;
+    max-width: 250px;
+    height: 25px;
+    border: 1px solid #313131;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.form_textarea_local{
+    width: 85vw !important;
+    max-width: 250px;
+    height: 25px;
+    border: 1px solid #313131;
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+}
+.form_textarea_local:focus{
+    background-color: white;
+    color: black;
+    font-size: 8px;
+    transform: scale(1.5);
+}
+.thumbnail img{
+    max-height: 55px;
+    max-width: 100px;
+}
+.form_submit_local{
+    width: 85vw;
+    max-width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #313131;
+    background-color: #313131;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-reg-local {
+    transition: all 0.5s ease;
+  }
+  
+  .form-hidden {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-bottom: 0px;
+  }
+  .form-visible {
+    height: auto;
+    opacity: 1;
+  }
+  .arrow_h1_rotated{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+  .arrow_h1_rotated_off{
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+
+  .table_outer_container {
+    width: 100%;
+    overflow-x: auto;
+    color: white;
+  }
+  
+  .table_container {
+    width: 100%; /* Defina a largura máxima para ocupar o contêiner */
+    overflow-x: auto; /* Adiciona a rolagem horizontal quando o conteúdo ultrapassa a largura */
+    margin: 0 auto;
+    white-space: nowrap; /* Evita quebrar linhas */
+  }
+  
+  
+
+  .table_admin{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+  }
+
+  .table_admin th, .table_admin td {
+    border: 1px solid #313131;
+    padding: 8px;
+    text-align: left;
+    height: 50px; /* Defina a altura desejada para as linhas */
+    max-width: 200px;
+    width: 200px;
+    white-space: nowrap; /* Para garantir que o texto não quebre */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .table_admin th {
+    background-color: #f2f2f2;
+  }
+  .td_head_buttons {
+    width: 140px !important; /* Ajuste conforme necessário */
+  }
+  .td_name {
+    font-weight: bold;
+  }
+  .td_button{
+    /* display: flex; */
+    width: 140px !important;
+  }
+  .td_button button, .td_iframe button {
+    padding: 5px 10px;
+    background-color: transparent;
+    /* border: 2px solid #ffffff; */
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .td_button button:hover , .td_iframe button:hover{
+    background-color: #1c1c1c;
+  }
+  .td_button button img{
+    height: 100%;
+    width: 100%;
+  }
+  .edit_button_table, .td_iframe button{
+    border: 2px solid #2464E4;
+  }
+  .edit_accept_table{
+    border: 2px solid #6cb44c;
+  }
+  .edit_accept_table img{
+    filter: brightness(0) saturate(100%) invert(77%) sepia(8%) saturate(2921%) hue-rotate(56deg) brightness(82%) contrast(85%);
+  }
+  .delete_button_table{
+    border: 2px solid #fc4444;
+  }
+  .edit_button_table img, .td_iframe button img, .form_check_icon{
+    filter: brightness(0) saturate(100%) invert(29%) sepia(64%) saturate(3064%) hue-rotate(213deg) brightness(93%) contrast(91%);
+  }
+  .delete_button_table img, .form_x_icon{
+    filter: brightness(0) saturate(100%) invert(50%) sepia(78%) saturate(4416%) hue-rotate(335deg) brightness(101%) contrast(97%);
+  }
+  
+  .td_sobre {
+    max-width: 200px; /* Ajuste conforme necessário */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .td_sobre.td_break {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  .td_iframe{
+    width: 60px !important;
+  }
+
+  .table-visible {
+    display: block;
+  }
+  
+  .table-hidden {
+    display: none;
+  }
+
+  /* Estilos para o modal de imagem */
+.image-modal {
+  display: none;
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+  z-index: 999; /* Garante que o modal esteja na parte superior */
+  overflow: auto;
+}
+
+.image-modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-modal img {
+  max-width: 80%; /* Define o tamanho máximo da imagem ampliada */
+  max-height: 80%;
+  border: 4px solid #fff; /* Adiciona uma borda branca */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+}
+
+.modal-open {
+  display: block; /* Mostra o modal se estiver aberto */
+}
+
+.modal-closed {
+  display: none; /* Esconde o modal se estiver fechado */
+}
+
+.image-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000; /* Garante que o botão de fechar esteja na parte superior */
+}
+
+.button_collab{
+  width: 70vw;
+  height: 50px;
+  background-color: #313131;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+/* 
+  thead{
+    border: 1px solid #313131;
+  }
+  .td_sobre{
+    width: 200px !important;
+    max-height: 95px;
+    overflow-y: scroll;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .td_break {
+    line-break: anywhere;
+    width: 100px;
+  }
+   */

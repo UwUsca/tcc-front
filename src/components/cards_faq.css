@@ -1,0 +1,56 @@
+.card_faq, .contato_faq{
+  width: 100vw;
+  height: fit-content;
+  padding: 10px;
+  background-color:#1f1f1f;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card_text_faq_container{
+    display: flex;
+    justify-content: space-between;
+}
+.card_text_faq{
+    font-size: 2vh;
+    font-weight: 600;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 0.5px black;
+    color: #eee;
+    text-transform: uppercase;
+    margin: 0;
+}
+.contato_faq{
+  background-image: linear-gradient(45deg, #2663E5 50%, #2B26C1 50%);
+}
+.icon_faq{
+    transform: rotate(-90deg);
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+.card_text_resposta{
+    font-size: 2vh;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 0.5px black;
+    color: #f0f0f0;
+    text-transform: none;
+    margin: 0;
+    margin-left: 5px;
+    animation: fadeIn 1s;
+    margin-top: 10px;
+}
+.resposta {
+    display: none;
+
+    animation: expand 0.5s forwards;
+  }
+  @keyframes expand {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: auto;
+      opacity: 1;
+    }
+  }
